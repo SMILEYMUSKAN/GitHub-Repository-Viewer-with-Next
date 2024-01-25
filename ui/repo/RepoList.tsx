@@ -9,16 +9,16 @@ const RepoList = ({ repos, searchRepo, repoList, username }: any) => {
 
   return (
     <div className="w-full flex items-center justify-center gap-4 flex-col repo-list-ui">
-      <div className="flex items-center justify-center nav-div-ui">
-        {repos.length > 1 ? (
+      {repos.length > 1 ? (
+        <div className="flex items-center justify-center nav-div-ui">
           <h1 className="text-2xl total-repo-count-ui">
             Total Repos: ({repoList.length ? repoList.length : 0})
           </h1>
-        ) : null}
-        <Link href="/" className="text-lg hover:text-blue-500">
-          Back To Home
-        </Link>
-      </div>
+          <Link href="/" className="text-lg hover:text-blue-500">
+            Back To Home
+          </Link>
+        </div>
+      ) : null}
       {repos.map((userInfo: any) => (
         <div
           key={userInfo.id}
