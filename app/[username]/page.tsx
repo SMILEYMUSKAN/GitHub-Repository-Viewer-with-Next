@@ -8,7 +8,7 @@ import { RepoProps } from "@/types";
 import NotFound from "@/ui/NotFound";
 
 const ReposComponent = ({ params: { username } }: RepoProps) => {
-  const [repoList, setRepoList] = useState([]);
+  const [repoList = [], setRepoList] = useState(null);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     getUserRepos(username).then((res) => {
