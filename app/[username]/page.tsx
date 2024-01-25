@@ -8,7 +8,7 @@ import { RepoProps } from "@/types";
 import NotFound from "@/ui/NotFound";
 
 const ReposComponent = ({ params: { username } }: RepoProps) => {
-  const [repoList, setRepoList] = useState(null);
+  const [repoList, setRepoList] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     getUserRepos(username).then((res) => {
@@ -17,7 +17,7 @@ const ReposComponent = ({ params: { username } }: RepoProps) => {
     });
   }, []);
 
-  if (repoList||[]?.length === 0) {
+  if (repoList?.length === 0) {
     return (
       <div className="w-full mt-12 h-full flex items-center justify-center">
         <NotFound title={username} linkName="Home Page" />
