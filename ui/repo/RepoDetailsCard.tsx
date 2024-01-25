@@ -91,7 +91,7 @@ const RepoDetailsCard = ({ repoDetails }: any) => {
             className="font-medium cursor-pointer hover:text-blue-500 pb-2 hover:transition"
             textGradient
             placeholder={undefined}>
-            <a href={`/${owner?.login}`}>Back to {owner?.login}'s Repos</a>
+            <a href={`/${owner?.login}`}>Back to {owner?.login} Repos</a>
           </Typography>
         </div>
       </CardBody>

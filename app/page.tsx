@@ -48,7 +48,7 @@ export default function SearchForm() {
           alt="gig-img"
           width="200"
         />
-        <h1 className="text-3xl">GitHub Online Repo's Viewer</h1>
+        <h1 className="text-3xl">GitHub Online Repos Viewer</h1>
       </div>
     </main>
   );

@@ -27,7 +27,7 @@ const RepoDetails = ({ params: { username, repoName } }: RepoProps) => {
           <a
             href={`/${username}`}
             className="text-xl text-bold  hover:text-blue-500">
-            Back To Repo's
+            Back To Repos
           </a>
         </section>
         <img
