@@ -27,7 +27,7 @@ const RepoDetailsCard = ({ repoDetails }: any) => {
 
   return (
     <Card
-      className="w-96 rounded shadow-2xl flex-col items-center justify-center card-ui"
+      className="w-96 rounded shadow-2xl flex-col items-center justify-center"
       placeholder={undefined}>
       <CardBody
         className="rounded flex flex-col gap-2 flex-wrap justify-center items-center"
@@ -44,7 +44,7 @@ const RepoDetailsCard = ({ repoDetails }: any) => {
         <Typography variant="h4" color="blue-gray" placeholder={undefined}>
           {owner?.login}
         </Typography>
-        <div className="flex flex-col gap-3 mt-2 card-body-ui">
+        <div className="flex flex-col gap-3">
           <Typography
             color="blue-gray"
             className="font-medium"

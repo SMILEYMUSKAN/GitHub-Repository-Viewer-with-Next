@@ -2,47 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-.repo-link-ui {
-  cursor: pointer;
-}
-
-.repo-link-ui:hover {
-  color: dodgerblue;
-  transition: all 0.2s;
-}
-
-.repo-list-ui {
-  gap: 2em;
-}
-
-.loading-ui {
-  width: 100%;
-}
-
-.card-body-ui {
-  gap: 6px;
-}
-
-.card-ui {
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
-}
-.not-found-ui {
-  margin-top: 1em;
-}
-
-.total-repo-count-ui {
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
 .nav-div-ui {
   width: 50%;
-  justify-content: space-between;
-}
-
-.repo-ui {
-  border-bottom: 1px solid rgb(221, 220, 220);
-  padding-bottom: 7px;
 }
 
 .github-username-ui {

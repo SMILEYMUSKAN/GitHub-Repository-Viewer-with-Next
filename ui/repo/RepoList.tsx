@@ -8,21 +8,21 @@ const RepoList = ({ repos, searchRepo, repoList, username }: any) => {
   }
 
   return (
-    <div className="w-full flex items-center justify-center gap-4 flex-col repo-list-ui">
+    <div className="w-full flex items-center justify-center gap-4 flex-col">
       {repos.length > 1 ? (
-        <div className="flex items-center justify-center nav-div-ui">
-          <h1 className="text-2xl total-repo-count-ui">
+        <div className="flex items-center justify-between nav-div-ui">
+          <h1 className="text-xl my-2">
             Total Repos: ({repoList.length ? repoList.length : 0})
           </h1>
           <Link href="/" className="text-lg hover:text-blue-500">
-            Back To Home
+            Back to Home
           </Link>
         </div>
       ) : null}
       {repos.map((userInfo: any) => (
         <div
           key={userInfo.id}
-          className="flex  w-2/4 mb-2 border-b gap-4 p-4 repo-ui">
+          className="flex  w-2/4 mb-2 border-b gap-4 pb-4 p-4 repo-ui">
           <img
             src={userInfo?.owner?.avatar_url}
             alt="user-avtar"
@@ -30,10 +30,10 @@ const RepoList = ({ repos, searchRepo, repoList, username }: any) => {
             className="rounded-full"
           />
           <div className="flex flex-col gap-2">
-            <h1 className="font-semibold github-username-ui">
+            <h1 className="underline">
               {userInfo?.owner?.login}
             </h1>
-            <h2 className="text-2xl hover:text-blue-500 repo-link-ui">
+            <h2 className="text-2xl hover:text-blue-500 cursor-pointer">
               <Link href={`/${username}/${userInfo?.name}`}>
                 {userInfo?.name}
               </Link>

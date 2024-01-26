@@ -1,6 +1,6 @@
 export default function Loading() {
   return (
-    <div className="grid mt-40 min-h-[140px] w-full place-items-center overflow-x-scroll rounded-lg p-6 lg:overflow-visible loading-ui">
+    <div className="grid mt-40 min-h-[140px] w-full place-items-center overflow-x-scroll rounded-lg p-6 lg:overflow-visible">
       <svg
         className="w-10 h-10 text-gray-300 animate-spin"
         viewBox="0 0 64 64"

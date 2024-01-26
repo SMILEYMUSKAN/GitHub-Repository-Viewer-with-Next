@@ -3,7 +3,7 @@
 import { getRepoDetails } from "@/utils";
 import { useEffect, useState } from "react";
 import { RepoProps } from "@/types";
-import Loading from "@/app/LoadingSpinner";
+import Loading from "@/ui/LoadingSpinner";
 import RepoDetailsCard from "@/ui/repo/RepoDetailsCard";
 
 const RepoDetails = ({ params: { username, repoName } }: RepoProps) => {
@@ -27,7 +27,7 @@ const RepoDetails = ({ params: { username, repoName } }: RepoProps) => {
           <a
             href={`/${username}`}
             className="text-xl text-bold  hover:text-blue-500">
-            Back To Repos
+            Back to Repos
           </a>
         </section>
         <img

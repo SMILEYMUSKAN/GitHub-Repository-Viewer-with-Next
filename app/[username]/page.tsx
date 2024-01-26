@@ -3,7 +3,7 @@
 import { getUserRepos } from "@/utils";
 import { useEffect, useState } from "react";
 import SearchBar from "../../ui/repo/ReposView";
-import Loading from "../LoadingSpinner";
+import Loading from "../../ui/LoadingSpinner";
 import { RepoProps } from "@/types";
 import NotFound from "@/ui/NotFound";
 
