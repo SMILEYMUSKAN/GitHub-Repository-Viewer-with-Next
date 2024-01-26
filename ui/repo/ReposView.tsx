@@ -38,7 +38,7 @@ const ReposViewComponent = ({ repoList, username }: any) => {
         handleOnChange={handleOnChange}
         handleSubmit={handleSubmit}
         valueName={repoName}
-        placeholder="Enter repo name here......."
+        placeholder="Find Repositories......."
       />
       <RepoList
         repos={repos}
