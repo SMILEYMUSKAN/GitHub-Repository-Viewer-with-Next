@@ -22,7 +22,7 @@ const RepoList = ({ repos, searchRepo, repoList, username }: any) => {
       {repos.map((userInfo: any) => (
         <div
           key={userInfo.id}
-          className="flex  w-2/4 mb-2 border-b gap-4 pb-4 p-4 repo-ui">
+          className="flex  w-2/4 mb-2 border-b gap-4 pb-4 p-4 relative repo-ui">
           <img
             src={userInfo?.owner?.avatar_url}
             alt="user-avtar"
@@ -39,6 +39,7 @@ const RepoList = ({ repos, searchRepo, repoList, username }: any) => {
               </Link>
             </h2>
           </div>
+          {repos.length === 1 ? <a href={`/${username}`} className="hover:text-blue-500 absolute right-0">Back to Repos</a> : null}
         </div>
       ))}
     </div>
